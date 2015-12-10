@@ -1,0 +1,198 @@
+.login-box, .register-box{width: 430px; position: relative; z-index: 999;}
+.login-box.register-box, .register-box{width: 700px; margin: 4% auto;}
+.icheckbox_square-blue, .iradio_square-blue{width: 24px}
+div.row.links{margin-top:15px; margin-bottom: 5px}
+
+
+.login-page, .register-page{background-color: #F5F5F5}
+.login-box-body, .register-box-body{ 
+    -webkit-box-shadow: 0px 0px 20px -4px #000;
+    -moz-box-shadow: 0px 0px 20px -4px #000;
+    -ms-box-shadow: 0px 0px 20px -4px #000;
+    -o-box-shadow: 0px 0px 20px -4px #000;
+    box-shadow: 0px 0px 20px -4px #000;
+
+    background-color: rgba(255,255,255,0.9);
+
+}
+div.background{
+    /*background: url(i/background.png) no-repeat;*/
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+
+    height: 561px;
+    bottom: 0px;
+}
+
+div.background img{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+
+div.background > div{
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+}
+
+div.background blockquote{
+
+    font-size: 1.0em;
+    font-weight: bold;
+
+    padding-top: 10px;
+    padding-right: 10px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.6+0,0+100 */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-8 */
+
+}
+
+div.background blockquote p{
+    text-shadow: 2px 0px 0px #FFF;
+}
+
+div.datepicker {margin-top: 85px}
+
+@media screen and ( min-width: 1700px ){
+    div.background img{
+        bottom: -200px
+    }
+}
+
+@media screen and ( min-width: 1500px ) and ( max-width: 1699px ){
+    div.background img{
+        bottom: -150px
+    }
+}
+
+@media screen and ( min-width: 1300px ) and ( max-width: 1499px ){
+    div.background img{
+        bottom: -100px
+    }
+}
+
+@media screen and ( min-width: 1100px ) and ( max-width: 1399px ){
+    div.background img{
+        bottom: -50px
+    }
+}
+
+/*
+==============================================
+fadeInQuickInv
+==============================================
+*/
+.animation-fadeInQuickInv {
+    animation-name: fadeInQuickInv;
+    -webkit-animation-name: fadeInQuickInv;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+    visibility: visible !important;
+}
+
+@keyframes fadeInQuickInv {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInQuickInv {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/***************/
+
+div.buttons-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+div.buttons-video > ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+div.buttons-video > ul > li{
+    
+    cursor: pointer;
+    
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    background: rgba(125,125,125,0.8);
+    color: #FFF;
+    border-radius: 3px;
+    height: 30px;
+    
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;    
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    
+}
+
+div.buttons-video > ul > li:hover{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+div.buttons-video > ul > li label{
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.csscheckbox span{
+    background-color: #FFF;
+}
+
+.csscheckbox.small {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
