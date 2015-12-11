@@ -65,8 +65,6 @@ class Robo_agenda_model extends CI_Model {
             )
         );
         
-        $this->applog->info("Ativou o Agendamento ID: {$data["id"]} | {$data["nome"]} - {$data["descricao"]}");
-        
     }
     
     function inativar($hash){
@@ -80,8 +78,6 @@ class Robo_agenda_model extends CI_Model {
             )
         );
         
-        $this->applog->info("Inativou o Agendamento ID: {$data["id"]} | {$data["nome"]} - {$data["descricao"]}");
-        
     }
     
     function excluir($hash){
@@ -90,8 +86,6 @@ class Robo_agenda_model extends CI_Model {
         
         $this->db->where("md5(id)", $hash);
         $this->db->delete("robo_agenda");
-        
-        $this->applog->info("Excluiu o Agendamento ID: {$data["id"]} | {$data["nome"]} - {$data["descricao"]}");
         
     }
     
